@@ -37,6 +37,13 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+  function myFunction() {
+    var x = document.getElementById("myFile");
+    // x.disabled = true;
+  }
+  </script>
+
 </head>
 <body>
     <!-- // Intro -->
@@ -76,11 +83,17 @@ $(document).ready(function(){
                 </li>
             </ul>
             </div>
+            <h3>Upload your Transcript below:</h3>
+            <input type="file" id="myFile">
+
+            <!-- <p>Click the "Try it" button to disable the file upload button.</p>
+
+            <button onclick="myFunction()">Try it</button> -->
 
             <iframe
               allow="microphone;"
               width="350"
-              height="430"
+              height="500"
               src="https://console.dialogflow.com/api-client/demo/embedded/a07f8731-d849-4c1e-9608-5cc40f7a1505">
           </iframe>
       
